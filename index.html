@@ -1,0 +1,189 @@
+<!DOCMENT html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HForge | Premium Portfolio Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HForge</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="hero-tag">Premium design, performance-first development</p>
+            <h1>Crafting modern digital experiences<br>that convert visitors into customers.</h1>
+            <p>
+                I build responsive, polished websites and web applications that highlight your brand,
+                engage visitors, and deliver measurable results.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn-outline">Work With Me</a>
+            </div>
+        </div>
+
+        <div class="hero-image hidden">
+            <img src="pngtree-developers-are-coding-programs-on-computers-programmers-are-analyzing-data-png-image_14867886.png" alt="Developer coding on laptop">
+        </div>
+    </section>
+
+    <section class="about hidden" id="about">
+        <h2>About Me</h2>
+        <p>
+            Passionate frontend developer focused on creating modern, elegant, and responsive web experiences.
+            I turn ideas into beautiful, fast, and user-friendly websites that help businesses stand out online.
+        </p>
+
+        <div class="stats">
+            <div class="card">
+                <h3>10+</h3>
+                <span>Projects Delivered</span>
+            </div>
+            <div class="card">
+                <h3>3</h3>
+                <span>Core Technologies</span>
+            </div>
+            <div class="card">
+                <h3>100%</h3>
+                <span>Client Satisfaction</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="services hidden" id="services">
+        <h2>Services</h2>
+        <p class="section-description">Design and build fully responsive websites optimized for speed, usability, and conversion.</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Responsive Web Design</h3>
+                <p>Mobile-friendly layouts and polished interfaces that look great on every device.</p>
+            </div>
+            <div class="service-card">
+                <h3>Performance Optimization</h3>
+                <p>Fast-loading pages and smooth interactions built with performance in mind.</p>
+            </div>
+            <div class="service-card">
+                <h3>Brand-Driven UI</h3>
+                <p>Modern visuals and intuitive navigation crafted to reflect your unique brand story.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects hidden" id="projects">
+        <h2>Featured Projects</h2>
+        <p class="section-description">A selection of recent work showcasing clean interfaces and polished user experiences.</p>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Resaurant</h3>
+                <p>A responsive shopping experience with modern visuals and improved checkout flow.</p>
+                <a href="restaurant.html" class="btn">view project</a>
+            </div>
+            <div class="project-card">
+                <h3>Gym Showcase</h3>
+                <p>A sleek personal brand website built to highlight work, services, and client wins.</p>
+                <a href="gym.html" class="btn">view project</a>
+            </div>
+            <div class="project-card">
+                <h3>Cafe Dashboard</h3>
+                <p>Real-time sales data with interactive UI built using APIs and modern JavaScript.</p>
+                <a href="cafe.html" class="btn">view project</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials hidden">
+        <h2>What Clients Say</h2>
+        <p class="section-description">Feedback from businesses and founders who grew trust through clear, thoughtful web design.</p>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>“HForge delivered an outstanding website that exceeded our expectations. The communication was excellent and the results were fast.”</p>
+                <span>— Priya, Startup Founder</span>
+            </div>
+            <div class="testimonial-card">
+                <p>“The site looks gorgeous on all devices and our customers noticed the improved clarity immediately.”</p>
+                <span>— Aman, Product Manager</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills hidden" id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar"><span style="width:95%"></span></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar"><span style="width:90%"></span></div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="bar"><span style="width:75%"></span></div>
+    </div>
+
+    <div class="skill">
+        <p>React</p>
+        <div class="bar"><span style="width:60%"></span></div>
+    </div>
+</section>
+
+
+    <section class="contact hidden" id="contact">
+        <h2>Contact</h2>
+        <p>If you're ready for a stand-out website or want to discuss a project, send a message and I will reply soon.</p>
+        <div class="contact-layout">
+            <div class="contact-details">
+                <div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:hello@hforge.com">hello@hforge.com</a></p>
+                </div>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+91 98765 43210</p>
+                </div>
+                <div>
+                    <h3>Availability</h3>
+                    <p>Mon - Fri, 9AM - 6PM</p>
+                </div>
+            </div>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Tell me about your project" required></textarea>
+                <button type="submit">Send Message</button>
+                <p class="feedback-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+    <p>Ready to build something great? Reach out and let's create a website your customers love.</p>
+
+    <div class="socials">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+    </div>
+
+    <p>&copy; 2026 HForge. Designed with ❤️ by HForge.</p>
+</footer>
+
+    <canvas id="particles"></canvas>
+<div class="cursor-glow"></div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -7,5 +7,12 @@ const transporter = nodemailer.createTransport({
         pass: process.env.EMAIL_PASS,
     },
 });
+transporter.verify((error, success) => {
+    if (error) {
+        console.error(error);
+    } else {
+        console.log("SMTP connection successful");
+    }
+});
 
 module.exports = transporter;

@@ -35,12 +35,15 @@ ${message}
             message: "Message saved successfully"
         });
 
-    } catch (error) {
-        res.status(500).json({
-            success: false,
-            message: error.message
-        });
-    }
+    catch (error) {
+    console.error("CONTACT ERROR:", error);
+
+    res.status(500).json({
+        success: false,
+        message: error.message,
+        stack: error.stack
+    });
+}
 });
 
 module.exports = router;

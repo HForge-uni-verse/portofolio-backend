@@ -35,7 +35,7 @@ ${message}
             message: "Message saved successfully"
         });
 
-    catch (error) {
+    } catch (error) {
     console.error("CONTACT ERROR:", error);
 
     res.status(500).json({

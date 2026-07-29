@@ -65,7 +65,7 @@ if (contactForm) {
 
         try {
 
-            const response = await fetch("http://localhost:5000/api/contact", {
+            const response = await fetch("https://portofolio-backend-3xuh.onrender.com/api/contact", {
 
                 method: "POST",
 

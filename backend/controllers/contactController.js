@@ -19,7 +19,7 @@ exports.contact = async (req, res) => {
         // Send email
         await resend.emails.send({
             from: "onboarding@resend.dev", // Replace with your verified sender
-            to: "YOUR_EMAIL@example.com",   // Replace with your email
+            to: "sarruhassan@gmail.com",   // Replace with your email
             subject: "New Portfolio Contact",
             html: `
                 <h2>New Contact Message</h2>

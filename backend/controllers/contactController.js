@@ -1,4 +1,4 @@
-const Contact = require("../models/Contact");
+const Contact = require("../models/contact");
 const { Resend } = require("resend");
 
 const resend = new Resend(process.env.RESEND_API_KEY);

@@ -7,13 +7,13 @@ const {
     deleteContact,
 } = require("../controllers/contactController");
 
-// Create Contact
+const { verifyToken } = require("../middleware/authMiddleware");
+
+// Public route
 router.post("/", contact);
 
-// Get All Contacts
-router.get("/", getContacts);
-
-// Delete Contact
-router.delete("/:id", deleteContact);
+// Protected routes
+router.get("/", verifyToken, getContacts);
+router.delete("/:id", verifyToken, deleteContact);
 
 module.exports = router;
